@@ -74,7 +74,8 @@ body {
 button {border:none}
 button:focus {outline:0;}
 button {background-color: transparent;}
-button {font-size: 15px;}
+button {font-size: 15px;
+        cursor: pointer;}
 #show-button { cursor: pointer; }
 #hide-button { cursor: pointer; display: none; }
 
@@ -109,7 +110,7 @@ button {font-size: 15px;}
    bottom: 60px;
 }
 
-.img-text-wrapper:hover .subtitle {
+.portfolio-item-wrapper:hover .subtitle {
     font-weight: 600;
     color: black;
 }
