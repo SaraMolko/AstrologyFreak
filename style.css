@@ -1,0 +1,144 @@
+/*Master styles */
+body {
+   font-family:"cinzel", sans-serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/*Nav styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side{
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration:none;
+    transition: color 0.5s;
+}
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid transparent;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+/*Portfolio  styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portflio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button {border:none}
+button:focus {outline:0;}
+button {background-color: transparent;}
+button {font-size: 15px;}
+#show-button { cursor: pointer; }
+#hide-button { cursor: pointer; display: none; }
+
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0px;
+    display: contents;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: middle;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    position: static;
+    width: 100%;
+    transition: 1s;
+}
+
+.logo-wrapper1 img {
+    padding-top: 20px;
+}
+
+.img-text-wrapper .subtitle {
+   transition: 1s;
+   font-weight: 600; 
+   color:transparent;
+   position: bottom;
+   bottom: 60px;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: black;
+}
+
+.img-darken {
+    transition: 0.5s;
+    filter: brightness(40%)
+}
+
+/* About page*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 70%;
+    padding-left: 90px;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+    padding-right: 90px;
+}
+
+.profile-content-wrapper h1 {
+    color: black;
+}
+
+.profile-content-wrapper h3 {
+    color: darkslategray;
+}
